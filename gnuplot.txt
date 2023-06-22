@@ -1,0 +1,7 @@
+set title 'NHL Games Played By Draft Year'
+set xlabel 'Year'
+set ylabel 'Number of Games'
+set style line 1
+set term png
+set output 'generated/games_played_per_draft_year.png'
+plot 'generated/games_played_per_draft_year.csv'
