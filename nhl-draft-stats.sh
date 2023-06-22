@@ -15,6 +15,7 @@ done
 # draft_years=("1970")
 # echo "draft_years=${draft_years[*]}"
 
+rm -rf generated
 mkdir -p generated output
 echo "Year, Games Played" >> generated/games_played_per_draft_year.csv
 
