@@ -35,6 +35,7 @@ for draft_year in "${draft_years[@]}"; do
                 -H "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/114.0" \
                 --data-urlencode "isAggregate=true" \
                 --data-urlencode "isGame=false" \
+                --data-urlencode 'sort=[{"property":"points","direction":"DESC"},{"property":"goals","direction":"DESC"},{"property":"assists","direction":"DESC"},{"property":"playerId","direction":"ASC"}]' \
                 --data-urlencode "start=${start}" \
                 --data-urlencode "limit=${limit}" \
                 --data-urlencode "factCayenneExp=gamesPlayed>=1" \
