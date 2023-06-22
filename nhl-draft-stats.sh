@@ -17,6 +17,7 @@ done
 
 rm -rf generated output
 mkdir -p generated output
+echo "Year, Games Played" >> generated/games_played_per_draft_year.csv
 
 for draft_year in "${draft_years[@]}"; do
     start=0
